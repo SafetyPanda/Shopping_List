@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# -*- ruby -*-
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '../lib/')
+
+files = ARGV
+
+if files.empty?
+  puts "Missing Shopping List!"
+  exit 1
+end
+
+require 'shopping_list'
+
+
+Shopping_list.output_file(files[0])
