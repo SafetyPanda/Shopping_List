@@ -12,5 +12,4 @@ end
 
 require 'shopping_list'
 
-
 Shopping_list.output_file(files[0])
